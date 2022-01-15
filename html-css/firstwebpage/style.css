@@ -1,0 +1,63 @@
+body {
+    background: #FFF0F5;
+}
+
+h1 {
+    text-align: left;
+    margin-left: 20px;
+}
+
+#imagemCapa {
+    width: 100%;
+    height: 20px;
+}
+
+.divPrincipal {
+    background: #FFF0F5;
+    padding: 30px;
+    height: 200px;
+    border: 10px solid #708090;
+    margin: auto;
+}
+
+h2 {
+    text-align: center;
+    color: #696969;
+}
+
+p {
+    text-align: center;
+}
+#pMissao {
+    font-size: 20px;
+}
+
+#pMissao strong {
+    color: #FF1493;
+}
+
+h3 {
+    text-align: center;
+    color: #696969;
+    
+}
+.divBeneficios {
+    background: #FFF;
+    padding: 20px;
+}
+
+.ulBeneficios {
+    font-style: italic;    
+}
+
+ul {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 10%;
+}
+
+#imagemNailsBeneficios {
+    width: 30%;
+    margin-left: 350px;
+}
