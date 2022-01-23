@@ -11,7 +11,7 @@
     <body>
 		<header>
 			<div class="container">
-				<h1><img src="logo.png"></h1>
+				<h1><img src="logo.png" alt="Logo da Barbearia Alura"></h1>
 
 				<nav>
 					<ul class="navegacao">
@@ -28,37 +28,37 @@
 			<form>
 				<div>
 					<label for="inputNome">Nome e sobrenome</label>
-					<input type="text" id="inputNome" class="inputPadrao">
+					<input type="text" id="inputNome" class="inputPadrao" required>
 	
 					<label for="inputEmail">Email</label>
-					<input type="text" id="inputEmail" class="inputPadrao">
+					<input type="email" id="inputEmail" class="inputPadrao" required placeholder="example@email.com">
 	
 					<label for="inputTelefone">Telefone</label>
-					<input type="text" id="inputTelefone" class="inputPadrao">
+					<input type="tel" id="inputTelefone" class="inputPadrao" required placeholder="(00) 00000-0000">
 				</div>
 
 				<div>
 					<label for="textMensagem">Escreva sua mensagem</label>
-					<textarea cols="70" rows="10" id="textMensagem"></textarea>
+					<textarea cols="70" rows="10" id="textMensagem" required></textarea>
 				</div>
 
-				<div>
-					<p>Selecione a forma de contato</p>
+				<fieldset>
+					<legend>Selecione a forma de contato</legend>
 					<label for="radioEmail"><input type="radio" name="contato" value="email" id="radioEmail">Email</label>
 					
 					<label for="radioTelefone"><input type="radio" name="contato" value="telefone" id="radioTelefone">Telefone</label>
 				
-					<label for="radioWpp"><input type="radio" name="contato" value="wpp" id="radioWpp">WhatsApp</label>
-				</div>
+					<label for="radioWpp"><input type="radio" name="contato" value="wpp" id="radioWpp" checked>WhatsApp</label>
+				</fieldset>
 
-				<div>
-					<p>Qual horário prefere ser atendido?</p>
+				<fieldset>
+					<legend>Qual horário prefere ser atendido?</legend>
 					<select>
 						<option>Manhã</option>
 						<option>Tarde</option>
 						<option>Noite</option>
 					</select>
-				</div>
+				</fieldset>
 
 				<div>
 					<label class="checkbox" for="inputCheckbox">
@@ -72,7 +72,7 @@
         </main>
 
 		<footer>
-            <img src="logo-branco.png">
+            <img src="logo-branco.png" alt="Logo da Barbearia Alura">
             <p class="copyright">&copy; Copyright Barbearia Alura - 2022 © </p>
         </footer>
     </body>
