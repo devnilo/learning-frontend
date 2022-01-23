@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>Contatos - Barbearia Alura</title>
+        <title>Contato - Barbearia Alura</title>
 
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="contato.css">
@@ -25,9 +25,46 @@
 		</header>
 
         <main>
+			<form>
+				<div>
+					<label for="inputNome">Nome e sobrenome</label>
+					<input type="text" id="inputNome" class="inputPadrao">
+	
+					<label for="inputEmail">Email</label>
+					<input type="text" id="inputEmail" class="inputPadrao">
+	
+					<label for="inputTelefone">Telefone</label>
+					<input type="text" id="inputTelefone" class="inputPadrao">
+				</div>
 
+				<div>
+					<label for="textMensagem">Escreva sua mensagem</label>
+					<textarea cols="70" rows="10" id="textMensagem"></textarea>
+				</div>
+
+				<div>
+					<p>Selecione a forma de contato</p>
+					<label for="radioEmail"><input type="radio" name="contato" value="email" id="radioEmail">Email</label>
+					
+					<label for="radioTelefone"><input type="radio" name="contato" value="telefone" id="radioTelefone">Telefone</label>
+				
+					<label for="radioWpp"><input type="radio" name="contato" value="wpp" id="radioWpp">WhatsApp</label>
+				</div>
+
+				<div>
+					<label class="checkbox" for="inputCheckbox"><input type="checkbox" id="inputCheckbox">Aceito receber emails com novidades de novos produtos e promoções.</label>
+				</div>
+
+
+
+				<input type="submit" value="Enviar formulário">
+			</form>
         </main>
 
+		<footer>
+            <img src="logo-branco.png">
+            <p class="copyright">&copy; Copyright Barbearia Alura - 2022 © </p>
+        </footer>
     </body>
 
 </html>
