@@ -33,6 +33,10 @@ nav a:hover {
     text-decoration: underline;
 }
 
+.bannerInicial {
+    width: 100%;
+}
+
 .sobreBarbearia {
 	width: 940px;
     margin: 0 auto;
@@ -43,15 +47,18 @@ nav a:hover {
 
 .sobreBarbearia h2 {
 	font-size: 30px;
-	font-weight: bold;
-	padding: 20px 15px;
-	margin-top: -20px;
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.imagemUtensilios {
+    width: 150px;
 }
 
 .descricaoSobre {
 	font-size: 18px;
 	padding: 12px 12px;
-	margin-top: 0px;
+	margin: 0 0 1em;
 }
 
 .fraseDestaque {
@@ -64,6 +71,16 @@ nav a:hover {
 	font-weight: bold;
 	color: red;
 	font-style: italic;
+}
+
+.beneficios h3 {
+    font-size: 30px;
+    margin: 0 0 1em;
+    text-align: center;
+}
+
+.bannerBeneficios {
+    width: 60%;
 }
 
 footer {
