@@ -40,19 +40,20 @@ nav a:hover {
 .sobreBarbearia {
 	width: 940px;
     margin: 0 auto;
-    padding: 50px 0;
-	text-align: center;
-	box-sizing: border-box;
+    padding: 30px 0;
 }
 
 .sobreBarbearia h2 {
 	font-size: 30px;
     margin: 0 0 1em;
     text-align: center;
+    clear: left;
 }
 
 .imagemUtensilios {
-    width: 150px;
+    width: 120px;
+    float: left;
+    margin: 0 15px 15px 0;
 }
 
 .descricaoSobre {
@@ -77,6 +78,7 @@ nav a:hover {
     font-size: 30px;
     margin: 0 0 1em;
     text-align: center;
+    clear: left;
 }
 
 .bannerBeneficios {
