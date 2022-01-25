@@ -1,3 +1,7 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
 header {
 	background: #BBBBBB;
     padding: 10px 0;
@@ -45,6 +49,7 @@ nav a:hover {
 
 .sobreBarbearia h2 {
 	font-size: 30px;
+    font-weight: bold;
     margin: 0 0 1em;
     text-align: center;
     clear: left;
@@ -59,7 +64,6 @@ nav a:hover {
 .descricaoSobre {
 	font-size: 18px;
 	padding: 12px 12px;
-	margin: 0 0 1em;
 }
 
 .fraseDestaque {
@@ -76,6 +80,7 @@ nav a:hover {
 
 .beneficios h3 {
     font-size: 30px;
+    font-weight: bold;
     margin: 0 0 1em;
     text-align: center;
     clear: left;
