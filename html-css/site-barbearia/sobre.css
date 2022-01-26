@@ -132,6 +132,10 @@ nav a:hover {
     font-weight: bold;
 }
 
+.itensBeneficios:before {
+    content: "★ ";
+}
+
 .bannerBeneficios {
     width: 60%;
 }
