@@ -176,6 +176,19 @@ footer {
         position: static;
     }
 
+    .descricaoSobre {
+        margin: 10px 0;
+    }
+
+    .fraseDestaque {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .bannerBeneficios {
+        margin: 15px 0;
+    }
+
     .listaBeneficios, .bannerBeneficios {
         width: 100%;        
     }
