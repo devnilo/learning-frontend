@@ -174,6 +174,7 @@ footer {
 
     nav {
         position: static;
+        text-align: center;
     }
 
     .descricaoSobre {
