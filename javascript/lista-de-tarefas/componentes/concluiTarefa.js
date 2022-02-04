@@ -15,3 +15,5 @@ const concluirTarefa = (evento) => {
 
     tarefaCompleta.classList.toggle('done')
 }
+
+export default BotaoConclui

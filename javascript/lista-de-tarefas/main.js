@@ -1,9 +1,7 @@
-/* utilizar a “IIFE”, ou Immediately Invoked Function Expression ou “Função de Invocação Imediata”. */
+import BotaoConclui from "./componentes/concluiTarefa"
+import BotaoDeleta from "./componentes/deletaTarefa"
 
-// utilizando a arrow function no código inteiro para deixar o código anônimo
-
-( () => {
-    const criarTarefa = (evento) => {
+const criarTarefa = (evento) => {
     evento.preventDefault()
 
     const lista = document.querySelector('[data-list]')
@@ -21,11 +19,8 @@
     tarefa.appendChild(BotaoDeleta())
     lista.appendChild(tarefa)
     input.value = ""
-    }
+}
 
-    const novaTarefa = document.querySelector('[data-form-button]')
+const novaTarefa = document.querySelector('[data-form-button]')
 
-    novaTarefa.addEventListener('click', criarTarefa)
-
-}) ()
-
+novaTarefa.addEventListener('click', criarTarefa)
