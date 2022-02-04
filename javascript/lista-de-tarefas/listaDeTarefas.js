@@ -1,4 +1,9 @@
-const criarTarefa = (evento) => {
+/* utilizar a “IIFE”, ou Immediately Invoked Function Expression ou “Função de Invocação Imediata”. */
+
+// utilizando a arrow function no código inteiro para deixar o código anônimo
+
+( () => {
+    const criarTarefa = (evento) => {
     evento.preventDefault()
 
     const lista = document.querySelector('[data-list]')
@@ -15,25 +20,30 @@ const criarTarefa = (evento) => {
     tarefa.appendChild(BotaoConclui())
     lista.appendChild(tarefa)
     input.value = ""
-}
+    }
 
-const novaTarefa = document.querySelector('[data-form-button]')
+    const novaTarefa = document.querySelector('[data-form-button]')
 
-novaTarefa.addEventListener('click', criarTarefa)
+    novaTarefa.addEventListener('click', criarTarefa)
 
 //
 
-const BotaoConclui = () => {
-    const concluiBotao = document.createElement('button')
+    const BotaoConclui = () => {
+        const concluiBotao = document.createElement('button')
 
-    concluiBotao.classList.add('check-button')
-    concluiBotao.innerText = 'concluir'
+        concluiBotao.classList.add('check-button')
+        concluiBotao.innerText = 'concluir'
 
-    concluiBotao.addEventListener('click', concluirTarefa)
+        concluiBotao.addEventListener('click', concluirTarefa)
 
-    return concluiBotao
-}
+        return concluiBotao
+    }
 
-const concluirTarefa = (evento) => {
-    const concluiBotao = evento.target
-}
+    const concluirTarefa = (evento) => {
+        const concluiBotao = evento.target
+        const tarefaCompleta = concluiBotao.parentElement
+
+        tarefaCompleta.classList.toggle('done')
+    }
+}) ()
+
