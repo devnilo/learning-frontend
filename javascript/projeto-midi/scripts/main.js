@@ -14,8 +14,11 @@ for (let i = 0; i < listaDeTeclas.length; i++) {
         tocaSom(idAudio)
     };
 
-    tecla.onkeydown = () => {
-        tecla.classList.add('ativa');
+// adicionando onkey para ter a mesma animação que o onclick tem ao usar o enter
+    tecla.onkeydown = (evento) => {
+        if (evento.code === 'Enter' || evento.code === 'Space') {
+            tecla.classList.add('ativa');
+        }
     }
 
     tecla.onkeyup = () => {
